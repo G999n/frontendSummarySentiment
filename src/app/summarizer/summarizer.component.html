@@ -1,0 +1,26 @@
+<div class="w-screen min-h-screen bg-gray-100 flex items-center justify-center p-6">
+  <div class="w-full  bg-white rounded-2xl shadow-xl p-8 space-y-6">
+    
+    <h1 class="text-3xl font-bold text-gray-800 text-center">Text Summarization</h1>
+
+    <div class="space-y-2">
+      <label class="block text-lg font-medium text-gray-700">Enter Text</label>
+      <textarea [(ngModel)]="input"
+        class="w-full h-40 p-4 border border-gray-300 rounded-xl resize-none focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-800 text-base"
+        placeholder="Paste or type your text here..."></textarea>
+      <button (click)="submitInput()"
+        class="mt-2 w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-xl transition duration-300">
+        Summarize
+      </button>
+    </div>
+
+    <div class="space-y-2">
+      <label class="block text-lg font-medium text-gray-700">Summary</label>
+      <div
+        class="w-full min-h-[100px] bg-gray-50 border border-gray-200 rounded-xl p-4 text-gray-700 whitespace-pre-wrap">
+        {{ summary }}
+      </div>
+    </div>
+
+  </div>
+</div>

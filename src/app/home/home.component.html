@@ -1,0 +1,19 @@
+<div class="min-h-screen w-screen bg-gradient-to-br from-blue-50 to-blue-100 flex flex-col justify-center items-center space-y-8 p-8">
+  <h1 class="text-4xl font-bold text-gray-800 mb-6">Choose an Action</h1>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-md">
+    <button
+      (click)="goTo('/summarizer')"
+      class="w-full bg-gradient-to-r from-purple-500 to-indigo-500 hover:from-purple-600 hover:to-indigo-600 text-white text-xl font-semibold py-6 rounded-2xl shadow-lg transition duration-300 ease-in-out"
+    >
+      📝 Summarization
+    </button>
+
+    <button
+      (click)="goTo('/sentiment')"
+      class="w-full bg-gradient-to-r from-pink-500 to-red-500 hover:from-pink-600 hover:to-red-600 text-white text-xl font-semibold py-6 rounded-2xl shadow-lg transition duration-300 ease-in-out"
+    >
+      💬 Sentiment Analysis
+    </button>
+  </div>
+</div>
